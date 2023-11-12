@@ -18,7 +18,7 @@ while 1:
     print('Client address:', addr)
     data = conn.recv(BUFFER_SIZE)
     #if not data: break
-    currentTime = " " + " updated !!! " + time.ctime(time.time()) + "\r\n"
+    currentTime = " " + " !!! updated !!! " + time.ctime(time.time()) + "\r\n"
     print(data.decode('utf-8'))
     data = data + currentTime.encode('ascii')
     data = data + "202102712 진건승".encode('utf-8')
